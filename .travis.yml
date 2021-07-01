@@ -16,6 +16,7 @@ matrix:
             - g++-4.9
             - doxygen
             - libboost-all-dev
+            - libhts-dev
       env:
         - E="CC=gcc-4.9 && CXX=g++-4.9"
 
@@ -29,6 +30,7 @@ matrix:
             - g++-5
             - doxygen
             - libboost-all-dev
+            - libhts-dev
       env:
         - E="CC=gcc-5 && CXX=g++-5"
 
@@ -42,6 +44,7 @@ matrix:
             - g++-6
             - doxygen
             - libboost-all-dev
+            - libhts-dev
       env:
         - E="CC=gcc-6 && CXX=g++-6"
 
@@ -55,6 +58,7 @@ matrix:
             - g++-7
             - doxygen
             - libboost-all-dev
+            - libhts-dev
       env:
         - E="CC=gcc-7 && CXX=g++-7"
 
