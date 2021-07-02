@@ -65,16 +65,22 @@ matrix:
     # OSX gcc-4.9
     - os: osx
       osx_image: xcode8
-      before_install:
-        brew update
+      addons:
+        homebrew:
+          packages:
+            - htslib
+          update: true
       env:
         - E="CC=gcc-4.9 && CXX=g++-4.9"
 
     # OSX gcc-5
     - os: osx
       osx_image: xcode8
-      before_install:
-        brew update
+      addons:
+        homebrew:
+          packages:
+            - htslib
+          update: true
       env:
         - E="brew install gcc5 && CC=gcc-5 && CXX=g++-5"
 
